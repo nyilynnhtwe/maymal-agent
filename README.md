@@ -1,5 +1,8 @@
 # May Mal AI Agent Documentation 🌍
 
+![alt text](screenshot.png "Screenshot")
+
+
 ## Overview
 
 A multilingual interface that helps non-English speakers understand content through:
