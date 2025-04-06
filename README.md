@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# May Mal AI Agent Documentation 🌍
 
-## Getting Started
+## Overview
 
-First, run the development server:
+A multilingual interface that helps non-English speakers understand content through:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* DeepSeek R1 Local LLM (via Ollama) - Contextual reasoning and English processing
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+*  Native language translation using Gemini 2.5 Pro
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
+🚀 Real-time translation workflow
 
-## Learn More
+🌐 Local language support through models
 
-To learn more about Next.js, take a look at the following resources:
+⚡ Instant results with loading indicators
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🔒 Fully local operation (except DeepSeek API)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Technical Architecture
 
-## Deploy on Vercel
+### Work flow
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1.Get User Input: Capture the user's prompt.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2.DeepSeek R1 Processing: Send the input to DeepSeek R1 for contextual analysis.
+
+3.Retrieve Response: Receive the analyzed output from DeepSeek R1.
+
+4.Gemini 2.5 Pro Translation: Forward the DeepSeek response to Gemini 2.5 Pro for translation.
+
+5.Display Output: Present the translated content to the user.
+   
+### Key Technologies
+1. Next.js: Used for the frontend and API routes.
+2. Ollama: Facilitates local model execution.
+3. DeepSeek: Provides deep contextual understanding.
+4. Gemini 2.5 Pro: Enables smooth local language translation.
+5. React Hot Toast: Delivers user feedback through notifications.
+   
+
+## Setup Instructions
+
+### Requirements
+1. Node.js 18+
+2. Ollama: Must be running locally.
+3. Gemini api key from [Google AI Studio](https://aistudio.google.com/)
+
+
+## Configuration
+In src/app/utils/constants.ts:
+
+Gemini API Key: Insert your Gemini API key.
+
+Local Language: Set your desired language by modifying the LOCAL_LANGUAGE variable.
+
+---
+Feel free to enhance or contribute to this project. For any questions or suggestions, please contact the project maintainers.
