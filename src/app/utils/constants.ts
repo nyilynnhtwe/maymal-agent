@@ -2,7 +2,7 @@
 
 const LOCAL_LANGUAGE = "MYANMAR";
 
-export const GOOGLE_GEMINI_API_KEY = "AIzaSyAOjfMRTN6mCkqPi1GMJtOJYv7vX7V-H1Q";
+export const GOOGLE_GEMINI_API_KEY = "";
 export const DEEP_SEEK_MODEL_NAME = "deepseek-r1:8b";
 export const GEMINI_MODEL_NAME = "gemini-2.5-pro-preview-03-25";
 export const DEEP_SEEK_SYSTEM_PROMPT = "You are a senior programmer. Suggest the user as your junior. Plz response as short as possible";
